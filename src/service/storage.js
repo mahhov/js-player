@@ -43,10 +43,10 @@ class Storage {
 	}
 
 	prepareDir_() {
-		return this.prepareDirPromise_ = this.prepareDirPromise_ || new Promise(async resolve => {
-			await fs.mkdir(this.storageDir_).catch(() => null);
-			await fs.mkdir(this.downloadDir_).catch(() => null);
-			await fs.mkdir(this.explorerDownloadDir_).catch(() => null);
+		return this.prepareDirPromise_ = this.prepareDirPromise_ || new Promise(async (resolve, reject) => {
+			await fs.mkdir(this.storageDir_, {recursive: true}).catch(e => reject(e));
+			await fs.mkdir(this.downloadDir_, {recursive: true}).catch(e => reject(e));
+			await fs.mkdir(this.explorerDownloadDir_, {recursive: true}).catch(e => reject(e));
 			resolve();
 		});
 	}
