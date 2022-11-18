@@ -17,7 +17,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "bs-better-stream": "^2.0.0",
-    "dwytpl": "^5.8.3",
+    "dwytpl": "^5.8.4",
     "env-paths": "^2.2.0",
     "font-awesome": "^4.7.0",
     "google-oauth2-x": "^1.1.0",

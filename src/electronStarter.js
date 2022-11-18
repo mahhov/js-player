@@ -6,7 +6,7 @@ const {globalShortcutEvents} = require('./service/shortcuts');
 app.setAppUserModelId(process.execPath);
 
 // avoid display dimming and sleeping
-powerSaveBlocker.start('prevent-display-sleep');
+// powerSaveBlocker.start('prevent-display-sleep');
 
 app.on('ready', () => {
 	let window = new BrowserWindow({width: 1800, height: 1000, webPreferences: {nodeIntegration: true}});
