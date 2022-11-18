@@ -15,7 +15,7 @@
     "electron-builder": "^20.44.4"
   },
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.2",
     "bs-better-stream": "^2.0.0",
     "dwytpl": "^5.8.4",
     "env-paths": "^2.2.0",
